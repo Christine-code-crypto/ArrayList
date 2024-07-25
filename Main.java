@@ -38,6 +38,50 @@ public class Main{
         Collections.sort(cars);
         System.out.println("Sorted arraylist" +cars);
 
+        //Sort an array of integers numerically in ascending order 
+
+        ArrayList <Integer> numbers = new ArrayList<Integer>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        System.out.println(numbers);
+        Collections.sort(numbers);
+         for(int i:numbers){
+            System.out.println(i);
+         }
+
+        //Reverse the order of the list using the reverseorder method
+        System.out.println("reverseOrder");
+        ArrayList<Integer> marks = new ArrayList<Integer>();
+        marks.add(60);
+        marks.add(70);
+        marks.add(80);
+        marks.add(88);
+        marks.add(90);
+
+        Collections.sort(marks, Collections.reverseOrder());
+        for(int i: marks){
+            System.out.println(i);
+        }
+        //Reverse order for cars
+        System.out.println("Reverse order for cars");
+        ArrayList <String> magari = new ArrayList<String>(); //creating an array list object
+        magari.add("Volvo");
+        magari.add("Mercedes");
+        magari.add("Toyota");
+        magari.add("Voxwagon");
+
+        Collections.sort(magari, Collections.reverseOrder());
+        for(String i: magari){
+            System.out.println(i);
+        }
+
+
+
+
 
 
     }
